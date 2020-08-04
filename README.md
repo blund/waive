@@ -11,4 +11,5 @@ Theoretically, if executed on actual hardware, this could yield very energy effi
 ## What comes next?
 - Change the structure of the project to be a interpreted language. This way we don't have to recompile all the time :)
 - Write a nice parser for the proposed syntax in the examples folder.
+- Add microcode to be able to execute more useful instructions (cpy, add, etc..)
 - Expand this readme.
