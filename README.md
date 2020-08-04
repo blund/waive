@@ -1,4 +1,4 @@
-# waive
+# Waive
 A reversible logic based assembly like language and virtual machine
 
 ## What does any of that mean?
