@@ -1,7 +1,7 @@
-#include "waive.cpp"
+#include "../waive.cpp"
 
 int main() {
-  Machine m;
+  Machine m = {};
   bool a = 1;
   bool b = 1;
   bool c = 0;

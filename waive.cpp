@@ -22,7 +22,7 @@ typedef struct Machine {
 
   // Call stack
   Code instructions[32];
-  int count;
+  int instruction_count;
 
 } Memory;
 
@@ -86,7 +86,6 @@ void call(Machine *m, Op opcode, int a, int b, int c, int d) {
   write(m, a, b, c, d);
 }
 
-
 void printmem(Machine *m, int count) {
   for (int i = 0; i < count; i++) {
     printf("%i", m->mem[i]);
@@ -95,16 +94,18 @@ void printmem(Machine *m, int count) {
 }
 
 void push(Machine *m, bool verbose) {
-  do {
-    Code c = m->instructions[i];
-    if (code.opcode == NOP) break;
+  int i = 0;
+  Code c = m->instructions[i];
+
+  while (c.opcode != NOP) {
     call(m, c.opcode, c.a, c.b, c.c, c.d);
-    m->count++;
     if (verbose) {
       printf("%i| %i: %i %i %i %i\n", i, c.opcode, c.a, c.b, c.c, c.d);
       printmem(m, 6);
     }
-  } while c.opcode == NOP;
+    c = m->instructions[++i];
+    m->instruction_count = i;
+  }
 }
 
 void pull(Machine *m, bool verbose) {

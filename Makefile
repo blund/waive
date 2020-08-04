@@ -1,4 +1,4 @@
 # Børge Lundsaunet 2020
 
-example:
-	clang++ full_adder.cpp
+example: example\full_adder.cpp waive.cpp
+	clang++ example\full_adder.cpp
