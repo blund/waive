@@ -9,8 +9,4 @@ What makes it special is that those gates are _logically reversible_. This means
 Theoretically, if executed on actual hardware, this could yield very energy efficient computing. There are quite a few resources online, and I need to do more research myself on the matter. This language is just for toying with that concept and seeing what restrictions come up and how to deal with them.
 
 ## What comes next?
-- Change the structure of the project to be a interpreted language. This way we don't have to recompile all the time :)
-- Write a parser for the proposed syntax in the examples folder.
-- Add microcode to be able to execute more useful instructions (cpy, add, etc..)
-- Let the code refer to literals, and automatically use these in the machine instructions.
-- Expand this readme when I actually know more about reversible computation and logic.
+This project is still very.. early in development. Check out the issues for things I'm working on/planning to do.
