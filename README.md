@@ -1,4 +1,4 @@
-# waive
+# Waive
 A reversible logic based assembly like language and virtual machine
 
 ## What does any of that mean?
@@ -11,4 +11,4 @@ Theoretically, if executed on actual hardware, this could yield very energy effi
 ## What comes next?
 - Change the structure of the project to be a interpreted language. This way we don't have to recompile all the time :)
 - Write a nice parser for the proposed syntax in the full_adder.wve file in the examples folder.
-- Expand this readme.
+This project is still very.. early in development. Check out the issues for things I'm working on/planning to do.
